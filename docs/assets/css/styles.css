@@ -4,7 +4,7 @@
   src: url("../css/fonts/KalamehWeb_Regular.eot");
   src: url("../css/fonts/KalamehWeb_Regular.woff2") format("woff2"),
     url("../css/fonts/KalamehWeb_Regular.woff") format("woff"),
-    url("./Fonts/Kalameh_Regular.ttf") format("truetype");
+    url("../css/fonts/Kalameh_Regular.ttf") format("truetype");
 }
 
 @font-face {
