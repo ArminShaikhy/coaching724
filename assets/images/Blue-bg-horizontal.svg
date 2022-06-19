@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1025.997" height="1080.001" viewBox="0 0 1025.997 1080.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0143a4"/>
+      <stop offset="1" stop-color="#1468e4"/>
+    </linearGradient>
+  </defs>
+  <g id="bg" transform="translate(0.996 -379.463)">
+    <path id="bg-2" data-name="bg" d="M26.543,1459.463c-4.129-29.126-8.831-57.406-13.14-86.035-13.384-88.909-22.482-183.812,1.5-268.943,19.944-70.673,60.6-126.588,97.52-183.862s72.332-122.155,77.746-197.489c7.519-104.575-44.455-209.8-22.557-310.677a229.483,229.483,0,0,1,9.8-32.993h826.008v1080H26.543Z" transform="translate(21.577 0)" fill="url(#linear-gradient)"/>
+    <path id="Path_166" data-name="Path 166" d="M380.035,152.3c10.862,4.5,20.966,8.287,32.195,10.728,100.826,21.906,235.22-27.99,310.519-22.573s140.152,40.842,197.39,77.782S1018.817,291.8,1103.9,315.8s179.938,14.9,268.8,1.506c28.082-4.232,56.329-8.84,84.732-12.893" transform="translate(330.718 0.428) rotate(90)" fill="none" stroke="#ffd21f" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+
+    <link rel="preload" href="./assets/css/utilities.css" as="style">
+    <link rel="preload" href="./assets/css/styles.css" as="style">
+    <link rel="preload" href="./assets/css/media.css" as="style">
+
+    <link rel="stylesheet" href="./assets/css/utilities.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!--Swiper Js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header-nav main-nav top" id="navbar">
+            <div class="container flex-r align-center space-between">
+                <div class="services">
+                    <a href="#" class="btn btn-sm btn-secondary" id="sign-in-btn">
+                                ورود
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 31.427 30.673" >
+                                    <g id="enter_square" data-name="enter square" transform="translate(0 30.673) rotate(-90)">
+                                        <g id="Group_26" data-name="Group 26">
+                                            <path id="Path_23" data-name="Path 23" d="M29.794.13a.875.875,0,0,0-.879.879V19a3.944,3.944,0,0,1-3.938,3.938H5.7A3.944,3.944,0,0,1,1.758,19V.879A.879.879,0,0,0,0,.879V19a5.7,5.7,0,0,0,5.7,5.7H24.977a5.7,5.7,0,0,0,5.7-5.7V1.009A.879.879,0,0,0,29.794.13Z" transform="translate(0 6.729)" fill="#fff"/>
+                                            <path id="Path_24" data-name="Path 24" d="M5.85,21.449a.884.884,0,0,0,.618.26.858.858,0,0,0,.618-.26l5.585-5.585a.879.879,0,1,0-1.243-1.243L7.348,18.708V.879a.879.879,0,1,0-1.758,0v17.83L1.5,14.62A.879.879,0,1,0,.259,15.864Z" transform="translate(8.868)" fill="#fff"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+
+                    <a href="#" class="btn btn-sm btn-primary" id="free-consult-btn">
+                            مشاوره رایگان
+                        </a>
+                    <a href="#" class="service-link" id="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 26.372 28.028" class="search-icon" id="search-icon">
+                                <g id="search_button" data-name="search button" transform="translate(0 1)">
+                                  <g id="search_icon" data-name="search icon" transform="translate(0 -1)">
+                                    <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="#333" stroke-width="2">
+                                      <circle cx="11" cy="11" r="11" stroke="none"/>
+                                      <circle cx="11" cy="11" r="10" fill="none"/>
+                                    </g>
+                                    <path id="Path_3" data-name="Path 3" d="M0,0,7.2,5.147" transform="matrix(0.966, 0.259, -0.259, 0.966, 17.713, 19.485)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                                  </g>
+                                </g>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29.148 29.148" class="close-icon" id="close-icon">
+                            <g id="close_icon" data-name="close icon" transform="translate(-23.086 -22.086)">
+                              <line id="Line_12" data-name="Line 12" x2="26.32" y2="26.32" transform="translate(24.5 23.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                              <line id="Line_13" data-name="Line 13" x1="26.32" y2="26.32" transform="translate(24.5 23.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                            </g>
+                          </svg>
+
+                        <div class="search-dropdown flex-r-reverse align-center" id="search-dropdown">
+                            <div class="search-bar">
+                                <form class=" flex-r-reverse align-center space-between">
+                                    <input class="text-box" type="text" class="search-text">
+                                    <div class="search-drop-btn">
+                                        <input type="submit" value="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 26.372 28.028" class="search-icon">
+                                            <g id="search_button" data-name="search button" transform="translate(0 1)">
+                                              <g id="search_icon" data-name="search icon" transform="translate(0 -1)">
+                                                <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="#333" stroke-width="2">
+                                                  <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                  <circle cx="11" cy="11" r="10" fill="none"/>
+                                                </g>
+                                                <path id="Path_3" data-name="Path 3" d="M0,0,7.2,5.147" transform="matrix(0.966, 0.259, -0.259, 0.966, 17.713, 19.485)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                                              </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="flex-r align-center">
+                    <nav class="links-container">
+                        <ul class="links">
+                            <li class="flex-r-reverse align-center services-nav">
+                                <p>
+                                    <a href="#" id="services-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="7.829" viewBox="0 0 16.828 9.829" id="chevron-arrow">
+                                            <path id="arrow" d="M7,0,0,7l7,7" transform="translate(1.414 8.414) rotate(-90)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                                        </svg> خدمات
+                                    </a>
+                                </p>
+
+
+
+                                <div class="dropdown" id="dorp-down-box">
+                                    <div class="link-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.74" viewBox="0 0 251.004 211.74" class="triangle-link">
+                                            <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                                        </svg>
+                                        <a href="./Courses-coach.html" class="dropdown-link">دوره تربیت مربی</a>
+                                    </div>
+                                    <div class="link-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.74" viewBox="0 0 251.004 211.74" class="triangle-link">
+                                            <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                                        </svg>
+                                        <a href="./Courses-manager.html" class="dropdown-link">دوره مدیر به عنوان مربی</a>
+                                    </div>
+                                    <div class="link-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.74" viewBox="0 0 251.004 211.74" class="triangle-link">
+                                            <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                                        </svg>
+                                        <a href="./Courses-parents.html" class="dropdown-link">دوره والدین به عنوان مربی</a>
+                                    </div>
+                                    <div class="link-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.74" viewBox="0 0 251.004 211.74" class="triangle-link">
+                                            <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                                        </svg>
+                                        <a href="./Courses-selfcoach.html" class="dropdown-link">دوره خود مربی گری</a>
+                                    </div>
+                                    <div class="link-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.74" viewBox="0 0 251.004 211.74" class="triangle-link">
+                                            <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                                        </svg>
+                                        <a href="./Courses-calender.html" class="dropdown-link">تقویم آموزشی</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./Blog.html">بلاگ</a>
+                            </li>
+                            <li>
+                                <a href="./Blog.html">همکاری با ما</a>
+                            </li>
+                            <li>
+                                <a href="./Tarrif.html">تعرفه ها</a>
+                            </li>
+                            <li>
+                                <a href="./About.html">درباره ما</a>
+                            </li>
+                            <li>
+                                <a href="./contact-us.html">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="logo">
+                        <img src="" alt="">
+                        <a href="./index.html">کوچینگ 724</a>
+                        <img src="./assets/images/logo.png" class="logo-img">
+                    </div>
+
+                    <div class="hamburger-btn" id="hamburger-btn">
+                        <svg id="Mobile_Hamburger" data-name="Mobile Hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" class="hamburger-icon">
+                            <path id="Shape" d="M22.8,19.6H1.2a1.115,1.115,0,0,1-1.2-1,1.115,1.115,0,0,1,1.2-1H22.8a1.115,1.115,0,0,1,1.2,1A1.115,1.115,0,0,1,22.8,19.6Zm0-9H1.2A1.115,1.115,0,0,1,0,9.6a1.115,1.115,0,0,1,1.2-1H22.8a1.115,1.115,0,0,1,1.2,1A1.115,1.115,0,0,1,22.8,10.6Zm0-9H1.2A1.115,1.115,0,0,1,0,.6a1.115,1.115,0,0,1,1.2-1H22.8A1.115,1.115,0,0,1,24,.6,1.115,1.115,0,0,1,22.8,1.6Z" transform="translate(0 0.4)" fill="#333"/>
+                        </svg>
+
+
+                        <div class="hamburger-menu" id="hamburger-menu">
+                            <div class="link-row">
+                                <a id="hamburger-services">خدمات</a>
+                            </div>
+                            <div class="link-sub-row" id="services-sub-cat">
+                                <p><a href="">دوره تربیت مربی</a></p>
+                                <p><a href="">دوره مدیر به عنوان مربی</a></p>
+                                <p><a href="">دوره والدین به عنوان مربی</a></p>
+                                <p><a href="">دوره خود مربی گری</a></p>
+                                <p><a href="">تقویم آموزشی</a></p>
+                            </div>
+                            <div class="link-row">
+                                <a>بلاگ</a>
+                            </div>
+                            <div class="link-row">
+                                <a>تعرفه ها</a>
+                            </div>
+                            <div class="link-row">
+                                <a>تماس با ما</a>
+                            </div>
+                            <div class="link-row">
+                                <a>درباره ما</a>
+                            </div>
+                            <div class="link-row">
+                                <a style="font-weight: bold;color: black;">مشاوره رایگان</a>
+                            </div>
+                            <a class="btn btn-md btn-primary text-dark full-width enter-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.427" height="25.673" viewBox="0 0 31.427 30.673">
+                                        <g id="enter_square" data-name="enter square" transform="translate(0 30.673) rotate(-90)">
+                                          <g id="Group_26" data-name="Group 26">
+                                            <path id="Path_23" data-name="Path 23" d="M29.794.13a.875.875,0,0,0-.879.879V19a3.944,3.944,0,0,1-3.938,3.938H5.7A3.944,3.944,0,0,1,1.758,19V.879A.879.879,0,0,0,0,.879V19a5.7,5.7,0,0,0,5.7,5.7H24.977a5.7,5.7,0,0,0,5.7-5.7V1.009A.879.879,0,0,0,29.794.13Z" transform="translate(0 6.729)" fill="#333"/>
+                                            <path id="Path_24" data-name="Path 24" d="M5.85,21.449a.884.884,0,0,0,.618.26.858.858,0,0,0,.618-.26l5.585-5.585a.879.879,0,1,0-1.243-1.243L7.348,18.708V.879a.879.879,0,1,0-1.758,0v17.83L1.5,14.62A.879.879,0,1,0,.259,15.864Z" transform="translate(8.868)" fill="#333"/>
+                                          </g>
+                                        </g>
+                                    </svg> ورود به پنل
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="slider-container">
+            <div class="slider-box">
+                <div class="swiper" id="main-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="text-container">
+                                <p class="brand-text">- کوچینگ 724</p>
+                                <p>سریع تر یاد بگیر <br>بیشتر به دست بیار<br>قوی تر رشد کن</p>
+                            </div>
+                            <img src="./assets/images/life-coaching2-min.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-container">
+                                <p class="brand-text">- کوچینگ 724</p>
+                                <p>سریع تر یاد بگیر <br>بیشتر به دست بیار<br>قوی تر رشد کن</p>
+                            </div>
+                            <img src="./assets/images/life-coaching.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-container">
+                                <p class="brand-text">- کوچینگ 724</p>
+                                <p>سریع تر یاد بگیر <br>بیشتر به دست بیار<br>قوی تر رشد کن</p>
+                            </div>
+                            <img src="./assets/images/howtobecomealifecoach-1000x500-1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-container">
+                                <p class="brand-text">- کوچینگ 724</p>
+                                <p>سریع تر یاد بگیر <br>بیشتر به دست بیار<br>قوی تر رشد کن</p>
+                            </div>
+                            <img src="./assets/images/Holistic-Life-Coaching.jpg">
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="statistics-box" style="display:none;">
+                <div class="statistics-section" style="border: none;">
+                    <p class="statistics-number">85</p>
+                    <p class="statistics-category">ساعت کوچینگ</p>
+                </div>
+                <div class="statistics-section">
+                    <p class="statistics-number">85</p>
+                    <p class="statistics-category">مراجع</p>
+                </div>
+                <div class="statistics-section">
+                    <p class="statistics-number">85</p>
+                    <p class="statistics-category"> مربی</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="main">
+        <section class="info-container" id="Info">
+            <h1 class="info-title">کوچینگ 724 چیست</h1>
+            <div class="info-box">
+                <div class="info-text-box">
+                    <p class="info-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
+                        این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                </div>
+                <div class="info-video-box">
+                    <div class="container">
+                        <img src="./assets/images/sebastian-herrmann-NbtIDoFKGO8-unsplash.jpg">
+                        <div class="overlay"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="103.018" height="100.351" viewBox="0 0 103.018 100.351" class="video-play-btn">
+                            <path id="video_play_icon" data-name="video play icon" d="M37.677,13.755a9,9,0,0,1,15.646,0l30.027,52.8A9,9,0,0,1,75.527,80H15.473A9,9,0,0,1,7.649,66.551Z" transform="translate(-10.196 34.299) rotate(-30)" fill="#ffd21f"/>
+                        </svg>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1841.465" height="1066.809" viewBox="0 0 1841.465 1066.809" class="text-box-background">
+                    <g id="triangle_bg" data-name="triangle bg" transform="translate(-10.049 -1005.542)">
+                      <path id="Polygon_1" data-name="Polygon 1" d="M205.409,84.906c18.223-35.494,68.959-35.494,87.182,0L461.354,413.62c16.741,32.608-6.936,71.38-43.591,71.38H80.237c-36.654,0-60.332-38.772-43.591-71.38Z" transform="matrix(0.391, -0.921, 0.921, 0.391, 1210.485, 1463.953)" fill="rgba(255,210,31,0.39)"/>
+                      <path id="Polygon_3" data-name="Polygon 3" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(322.73 1207.442) rotate(-14)" fill="rgba(255,210,31,0.83)"/>
+                      <path id="Polygon_4" data-name="Polygon 4" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(991.451 1713.609) rotate(45)" fill="rgba(1,67,164,0.8)"/>
+                      <path id="Polygon_5" data-name="Polygon 5" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(250.714 1779.609) rotate(45)" fill="rgba(255,210,31,0.64)"/>
+                      <path id="Polygon_2" data-name="Polygon 2" d="M128.465,74.374c18.815-32.9,66.255-32.9,85.07,0l86.529,151.3C318.746,258.34,295.16,299,257.529,299H84.471c-37.631,0-61.217-40.66-42.535-73.326Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 10.049, 1380.813)" fill="rgba(1,67,164,0.46)"/>
+                    </g>
+                  </svg>
+            </div>
+        </section>
+
+        <section class="services-container" id="Services">
+            <h1 class="services-title">خدمات ما</h1>
+            <div class="service-category-header">
+                <div class="service-category-title-container">
+                    <a class="service-category-link" id="Culture-btn">ایجاد فرهنگ کوچینگ</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Culture-tri">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+                <div class="service-category-title-container">
+                    <a class="service-category-link" id="Tutorial-btn">آموزش کوچینگ</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Tutorial-tri" style="display: none;">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+                <div class="service-category-title-container">
+
+                    <a class="service-category-link" id="Personal-btn">کوچینگ فردی ، تیمی و سازمانی</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Personal-tri" style="display: none;">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+                <div class="service-category-title-container">
+
+                    <a class="service-category-link" id="Consult-btn">مشاوره ، تراپی و منتورینگ</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Consult-tri" style="display: none;">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="service-category-box" id="Coaching-culture">
+                <div class="service-img-container">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_rduu7yx7.json" background="transparent" speed="1" style="width: 100%; height: 500px;" loop autoplay class="service-img"></lottie-player>
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1232.912" height="1124.077" viewBox="0 0 1232.912 1124.077" class="triangle-background">
+                    <path id="text_triangle_bg" data-name="text triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1111.652) rotate(83)" fill="#ffe26f"/>
+                  </svg>
+            </div>
+            <div class="service-category-box" id="Coaching-tutorial" style="display: none;">
+                <div class="service-img-container">
+                    <img src="./assets/images/Education-coach.png" class="service-img" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                    <a href="#" class="btn btn-md btn-secondary">
+                        مشاهده بیشتر
+                    </a>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1232.912" height="1124.077" viewBox="0 0 1232.912 1124.077" class="triangle-background">
+                    <path id="text_triangle_bg" data-name="text triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1111.652) rotate(83)" fill="#ffe26f"/>
+                  </svg>
+            </div>
+            <div class="service-category-box" id="Personal-coaching" style="display: none;">
+                <div class="service-img-container">
+                    <img src="./assets/images/org-coaching.png" class="service-img" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1232.912" height="1124.077" viewBox="0 0 1232.912 1124.077" class="triangle-background">
+                    <path id="text_triangle_bg" data-name="text triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1111.652) rotate(83)" fill="#ffe26f"/>
+                  </svg>
+            </div>
+            <div class="service-category-box" id="Consult-coaching" style="display: none;">
+                <div class="service-img-container">
+                    <img src="./assets/images/therapy.png" class="service-img" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1232.912" height="1124.077" viewBox="0 0 1232.912 1124.077" class="triangle-background">
+                    <path id="text_triangle_bg" data-name="text triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1111.652) rotate(83)" fill="#ffe26f"/>
+                  </svg>
+            </div>
+        </section>
+
+        <section id="services-mobile">
+            <h1>خدمات ما</h1>
+
+            <div class="swiper" id="mobile-service-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="category-container">
+                            <h2>ایجاد فرهنگ کوچینگ</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Culture-tri">
+                                <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                              </svg>
+                        </div>
+                        <div class="gif-container">
+                            <div class="service-img-container">
+                                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_rduu7yx7.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay class="service-img"></lottie-player>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>هدف اولیه و اصلی کوچینگ 724 ایجاد فرهنگ مربی گری در کشور و کمک به آموزش و آشنایی عموم با مربی گری و مزایای آن چه در حوزه فردی و چه سازمانی می باشد، تا از این طریق بتواند زمینه را برای حضور افرادی که به مربی گری تمایل دارند
+                                و هم افراد و سازمان هایی که نیاز به یک مربی برای توسعه خود را احساس کرده اند فراهم نماید.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="678.238" height="600.546" viewBox="0 0 1087.238 1009.546" class="triangle-bg">
+                                <path id="single_triangle_bg" data-name="single triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1105.628 -65.469) rotate(83)" fill="#ffe26f"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-container">
+                            <h2>آموزش کوچینگ</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Culture-tri">
+                                <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                              </svg>
+                        </div>
+                        <div class="gif-container">
+                            <div class="service-img-container">
+                                <img src="./assets/images/Education-coach.png" class="mg-auto" style="width: auto; height: 300px;" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>هدف اولیه و اصلی کوچینگ 724 ایجاد فرهنگ مربی گری در کشور و کمک به آموزش و آشنایی عموم با مربی گری و مزایای آن چه در حوزه فردی و چه سازمانی می باشد، تا از این طریق بتواند زمینه را برای حضور افرادی که به مربی گری تمایل دارند
+                                و هم افراد و سازمان هایی که نیاز به یک مربی برای توسعه خود را احساس کرده اند فراهم نماید.</p>
+                            <a href="#" class="btn btn-md btn-secondary">
+                                مشاهده بیشتر
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="678.238" height="600.546" viewBox="0 0 1087.238 1009.546" class="triangle-bg">
+                                <path id="single_triangle_bg" data-name="single triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1105.628 -65.469) rotate(83)" fill="#ffe26f"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-container">
+                            <h2>کوچینگ فردی تیمی و سازمانی</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Culture-tri">
+                                <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                              </svg>
+                        </div>
+                        <div class="gif-container">
+                            <div class="service-img-container">
+                                <img src="./assets/images/org-coaching.png" class="mg-auto" style="width: auto; height: 300px;" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>هدف اولیه و اصلی کوچینگ 724 ایجاد فرهنگ مربی گری در کشور و کمک به آموزش و آشنایی عموم با مربی گری و مزایای آن چه در حوزه فردی و چه سازمانی می باشد، تا از این طریق بتواند زمینه را برای حضور افرادی که به مربی گری تمایل دارند
+                                و هم افراد و سازمان هایی که نیاز به یک مربی برای توسعه خود را احساس کرده اند فراهم نماید.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="678.238" height="600.546" viewBox="0 0 1087.238 1009.546" class="triangle-bg">
+                                <path id="single_triangle_bg" data-name="single triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1105.628 -65.469) rotate(83)" fill="#ffe26f"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category-container">
+                            <h2>مشاوره تراپی و منتورینگ</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="active-background" id="Culture-tri">
+                                <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                              </svg>
+                        </div>
+                        <div class="gif-container">
+                            <div class="service-img-container">
+                                <img src="./assets/images/therapy.png" class="mg-auto" style="width: auto; height: 300px;" alt="">
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>هدف اولیه و اصلی کوچینگ 724 ایجاد فرهنگ مربی گری در کشور و کمک به آموزش و آشنایی عموم با مربی گری و مزایای آن چه در حوزه فردی و چه سازمانی می باشد، تا از این طریق بتواند زمینه را برای حضور افرادی که به مربی گری تمایل دارند
+                                و هم افراد و سازمان هایی که نیاز به یک مربی برای توسعه خود را احساس کرده اند فراهم نماید.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="678.238" height="600.546" viewBox="0 0 1087.238 1009.546" class="triangle-bg">
+                                <path id="single_triangle_bg" data-name="single triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1105.628 -65.469) rotate(83)" fill="#ffe26f"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-black"></div>
+                <div class="swiper-button-prev swiper-button-black"></div>
+            </div>
+        </section>
+
+        <section id="tutorials">
+            <h1>بلاگ</h1>
+            <div class="btn-container">
+                <div class="category-box">
+                    <p id="articles-btn">مقالات</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="triangle-active" id="articles-tri">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+                <div class="category-box">
+                    <p id="videos-btn">ویدیو ها</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="triangle-active" style="display: none;" id="videos-tri">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+                <div class="category-box">
+                    <p id="podcasts-btn">پادکست ها</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="251.004" height="211.74" viewBox="0 0 251.004 211.74" class="triangle-active" style="display: none;" id="podcasts-tri">
+                        <path id="tab_bg" data-name="tab bg" d="M68.911,187.054c20.1-60.076,105.076-60.076,125.178,0l39.819,119C248.213,348.808,216.4,393,171.319,393H91.681c-45.081,0-76.894-44.192-62.589-86.943Z" transform="translate(-141.996 237.37) rotate(-90)" fill="#ffd21f"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="swiper" id="articles-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide empty-slider">
+                        <h2>مطلبی برای نمایش وجود ندارد!</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+            <div class="swiper" id="videos-slider" style="opacity: 0;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide empty-slider">
+                        <h2>مطلبی برای نمایش وجود ندارد!</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-red.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-red.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-red.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-red.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-red.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+            <div class="swiper" id="podcasts-slider" style="opacity: 0;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide empty-slider">
+                        <h2>مطلبی برای نمایش وجود ندارد!</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-green.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-green.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-green.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-green.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/what-is-coaching-green.jpg">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="#">یک مربی برای توسعه خود پیدا کنید</a>
+                            </p>
+                            <div class="footer">
+                                <p>3</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 25.5 22.679">
+                                    <path id="Heart_icon" data-name="Heart icon" d="M22.107,1.943a6.448,6.448,0,0,0-9.179,0l-.9.9-.9-.9a6.49,6.49,0,0,0-9.179,9.179L12.025,21.2,22.107,11.122a6.448,6.448,0,0,0,0-9.179" transform="translate(0.725 0.725)" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                                  </svg>
+                                <p>4</p>
+                                <svg id="message_icon" data-name="message icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 20.471">
+                                  <path id="Path_113" data-name="Path 113" d="M19.078.5H4.922A5.018,5.018,0,0,0,0,5.6v7.874a4.737,4.737,0,0,0,1.867,3.464,9.283,9.283,0,0,0,3.1,1.359l2.377,2.462a.686.686,0,0,0,.994,0L10.522,18.5h8.556A5.018,5.018,0,0,0,24,13.4V5.6A5.018,5.018,0,0,0,19.078.5Zm3.516,12.9a3.584,3.584,0,0,1-3.516,3.642H10.231a.691.691,0,0,0-.5.213L7.845,19.212,5.832,17.128a.7.7,0,0,0-.327-.192,8.689,8.689,0,0,1-2.756-1.088,3.029,3.029,0,0,1-1.343-2.376V5.6A3.584,3.584,0,0,1,4.922,1.956H19.078A3.584,3.584,0,0,1,22.594,5.6Zm0,0" transform="translate(0 -0.5)" fill="#333"/>
+                                  <path id="Path_114" data-name="Path 114" d="M155.855,144.328H146.5a.7.7,0,1,0,0,1.389h9.36a.7.7,0,1,0,0-1.389Zm0,0" transform="translate(-139.47 -137.32)" fill="#333"/>
+                                  <path id="Path_115" data-name="Path 115" d="M154.067,197.352h-7.7a.7.7,0,0,0,0,1.389h7.7a.7.7,0,0,0,0-1.389Zm0,0" transform="translate(-139.96 -186.264)" fill="#333"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+
+        </section>
+
+        <section id="our-coaches">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="700.809" viewBox="0 0 1841.465 1066.809" class="triangle-bg">
+                <g id="triangle_bg" data-name="triangle bg" transform="translate(-10.049 -1005.542)">
+                  <path id="Polygon_1" data-name="Polygon 1" d="M205.409,84.906c18.223-35.494,68.959-35.494,87.182,0L461.354,413.62c16.741,32.608-6.936,71.38-43.591,71.38H80.237c-36.654,0-60.332-38.772-43.591-71.38Z" transform="matrix(0.391, -0.921, 0.921, 0.391, 1210.485, 1463.953)" fill="rgba(255,210,31,0.39)"/>
+                  <path id="Polygon_3" data-name="Polygon 3" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(322.73 1207.442) rotate(-14)" fill="rgba(255,210,31,0.83)"/>
+                  <path id="Polygon_4" data-name="Polygon 4" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(991.451 1713.609) rotate(45)" fill="rgba(1,67,164,0.8)"/>
+                  <path id="Polygon_5" data-name="Polygon 5" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(250.714 1779.609) rotate(45)" fill="rgba(255,210,31,0.64)"/>
+                  <path id="Polygon_2" data-name="Polygon 2" d="M128.465,74.374c18.815-32.9,66.255-32.9,85.07,0l86.529,151.3C318.746,258.34,295.16,299,257.529,299H84.471c-37.631,0-61.217-40.66-42.535-73.326Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 10.049, 1380.813)" fill="rgba(1,67,164,0.46)"/>
+                </g>
+            </svg>
+            <h1>مربیان ما</h1>
+
+            <div class="swiper" id="our-coaches-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="card-header">
+                                <img src="./assets/images/coach-profile.jpg">
+                                <div class="rating-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#ffca38"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.37" height="19.225" viewBox="0 0 23.37 22.225">
+                                        <path id="Star" d="M13.685,2,17.3,9.315,25.37,10.5l-5.843,5.691,1.379,8.039-7.221-3.8-7.221,3.8,1.379-8.039L2,10.5l8.074-1.18Z" transform="translate(-2 -2)" fill="#e6e6e6"/>
+                                      </svg>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="coach-info">
+                                    <p style="font-weight: bold;">علی مرشدلو</p>
+                                    <p>بیزینس موچ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+            <a href="#" class="btn btn-md btn-primary text-dark more-link">مشاهده بیشتر</a>
+
+        </section>
+
+        <section id="testimonials">
+            <h1>نظرات مشتریان ما</h1>
+            <div class="main-box">
+                <div class="gray-line"></div>
+                <div class="slider-box">
+                    <div class="swiper" id="testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="text-container">
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+                                        با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در صت و سه درصد</p>
+                                </div>
+                                <div class="img-description-container">
+                                    <img src="./assets/images/coach-profile.jpg">
+                                    <div class="description">
+                                        <p style="font-weight: bold;">علی مرشدلو</p>
+                                        <p>مدیر عامل شرکت همراه اول</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text-container">
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+                                        با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در صت و سه درصد</p>
+                                </div>
+                                <div class="img-description-container">
+                                    <img src="./assets/images/coach-profile.jpg">
+                                    <div class="description">
+                                        <p style="font-weight: bold;">علی مرشدلو</p>
+                                        <p>مدیر عامل شرکت همراه اول</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text-container">
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+                                        با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در صت و سه درصد</p>
+                                </div>
+                                <div class="img-description-container">
+                                    <img src="./assets/images/coach-profile.jpg">
+                                    <div class="description">
+                                        <p style="font-weight: bold;">علی مرشدلو</p>
+                                        <p>مدیر عامل شرکت همراه اول</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="678.238" height="600.546" viewBox="0 0 1087.238 1009.546" class="triangle-bg">
+                        <path id="single_triangle_bg" data-name="single triangle bg" d="M413.422,189.282c32.369-72.87,135.788-72.87,168.157,0L937.544,990.653C964.568,1051.489,920.034,1120,853.466,1120H141.534c-66.568,0-111.1-68.511-84.078-129.347Z" transform="translate(1105.628 -65.469) rotate(83)" fill="#ffe26f"/>
+                      </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="customers">
+            <h1>مشتریان ما</h1>
+            <div class="main-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="700.809" viewBox="0 0 1841.465 1066.809" class="triangle-bg">
+                    <g id="triangle_bg" data-name="triangle bg" transform="translate(-10.049 -1005.542)">
+                      <path id="Polygon_1" data-name="Polygon 1" d="M205.409,84.906c18.223-35.494,68.959-35.494,87.182,0L461.354,413.62c16.741,32.608-6.936,71.38-43.591,71.38H80.237c-36.654,0-60.332-38.772-43.591-71.38Z" transform="matrix(0.391, -0.921, 0.921, 0.391, 1210.485, 1463.953)" fill="rgba(255,210,31,0.39)"/>
+                      <path id="Polygon_3" data-name="Polygon 3" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(322.73 1207.442) rotate(-14)" fill="rgba(255,210,31,0.83)"/>
+                      <path id="Polygon_4" data-name="Polygon 4" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(991.451 1713.609) rotate(45)" fill="rgba(1,67,164,0.8)"/>
+                      <path id="Polygon_5" data-name="Polygon 5" d="M80.225,50.49c11.716-21.688,42.834-21.688,54.55,0l55.52,102.776A31,31,0,0,1,163.02,199H51.98a31,31,0,0,1-27.275-45.734Z" transform="translate(250.714 1779.609) rotate(45)" fill="rgba(255,210,31,0.64)"/>
+                      <path id="Polygon_2" data-name="Polygon 2" d="M128.465,74.374c18.815-32.9,66.255-32.9,85.07,0l86.529,151.3C318.746,258.34,295.16,299,257.529,299H84.471c-37.631,0-61.217-40.66-42.535-73.326Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 10.049, 1380.813)" fill="rgba(1,67,164,0.46)"/>
+                    </g>
+                </svg>
+
+                <div class="swiper" id="customer-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Mahan.jpg" class="brand-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/saipa.jpg" class="brand-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Saderat.jpg" class="brand-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/hi web.jpg" class="brand-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Digikala.jpg" class="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                    <div class="swiper-button-next swiper-button-black"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-letter-container">
+            <div class="img-container">
+                <img src="./assets/images/Email.png" class="mg-auto" style=" width: 400px; height: 350px;" alt="">
+            </div>
+            <div class="form-container">
+                <form>
+                    <h1 class="form-title">با عضوریت در خبرنامه ما از آخرین دوره های آموزشی مطلع شوید</h1>
+                    <div class="input-box">
+                        <input type="submit" value="عضویت" class="btn btn-md btn-primary text-dark">
+                        <input type="text" class="text-box" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer-container" id="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1322.29" height="1322.29" viewBox="0 0 1322.29 1322.29" class="yellow-square">
+            <g id="square_bg" data-name="square bg" transform="translate(-1055 -7918)">
+              <rect id="Rectangle_21" data-name="Rectangle 21" width="935" height="935" rx="146" transform="translate(1055 8579.145) rotate(-45)" fill="#0143a4"/>
+              <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(1115 8579.041) rotate(-45)" fill="rgba(255,255,255,0.09)" stroke="#f8f8f8" stroke-width="8">
+                <rect width="850" height="850" rx="146" stroke="none"/>
+                <rect x="4" y="4" width="842" height="842" rx="142" fill="none"/>
+              </g>
+            </g>
+          </svg>
+
+        <div class="links-container">
+            <ul class="footer-info-list">
+                <li class="footer-header">
+                    <img src="./assets/images/logo-white.png" class="logo-img">
+                    <h1>کوچینگ 724</h1>
+                </li>
+                <li class="footer-body" id="address-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.548" height="24" viewBox="0 0 17.548 24">
+                        <g id="map" transform="translate(-68.817)">
+                          <g id="Group_30" data-name="Group 30" transform="translate(68.817)">
+                            <g id="Group_29" data-name="Group 29">
+                              <path id="Path_118" data-name="Path 118" d="M77.591,0a8.864,8.864,0,0,0-8.774,8.932c0,2.755,1.393,6.1,4.141,9.938a43.792,43.792,0,0,0,4.076,4.9.785.785,0,0,0,1.1.012,39.53,39.53,0,0,0,4.085-4.775c2.75-3.783,4.145-7.172,4.145-10.074A8.864,8.864,0,0,0,77.591,0ZM77.6,22.085c-1.767-1.918-7.215-8.228-7.215-13.153a7.206,7.206,0,1,1,14.41,0C84.8,14.122,79.377,20.225,77.6,22.085Z" transform="translate(-68.817)" fill="#fff"/>
+                            </g>
+                          </g>
+                          <g id="Group_32" data-name="Group 32" transform="translate(73.265 4.189)">
+                            <g id="Group_31" data-name="Group 31">
+                              <path id="Path_119" data-name="Path 119" d="M168.814,89.784a4.326,4.326,0,1,0,4.326,4.326A4.331,4.331,0,0,0,168.814,89.784Zm0,7.069a2.743,2.743,0,1,1,2.743-2.743A2.746,2.746,0,0,1,168.814,96.853Z" transform="translate(-164.488 -89.784)" fill="#fff"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+
+                    <a class="white-link">تهران</a>
+                </li>
+                <li class="footer-body">
+                    <svg id="phone-call" xmlns="http://www.w3.org/2000/svg" width="23.965" height="24" viewBox="0 0 23.965 24">
+                        <g id="Group_33" data-name="Group 33" transform="translate(0 0)">
+                          <path id="Path_120" data-name="Path 120" d="M3.907,40.892a2.362,2.362,0,0,1,1.713-.786,2.442,2.442,0,0,1,1.733.78l1.6,1.6c.132-.071.264-.137.39-.2.182-.091.355-.177.5-.269a17.406,17.406,0,0,0,4.171-3.8,10.268,10.268,0,0,0,1.368-2.159c-.416-.38-.8-.775-1.176-1.155-.142-.142-.284-.289-.426-.431a2.325,2.325,0,0,1,0-3.507l1.384-1.384c.157-.157.319-.319.471-.481.3-.314.623-.639.953-.943a2.4,2.4,0,0,1,1.7-.745,2.482,2.482,0,0,1,1.723.745l.01.01L21.746,29.9a3.708,3.708,0,0,1,1.1,2.357,8.884,8.884,0,0,1-.649,3.76,21.821,21.821,0,0,1-3.877,6.467A23.849,23.849,0,0,1,10.379,48.7a12.374,12.374,0,0,1-4.46,1.318c-.106.005-.218.01-.319.01a3.819,3.819,0,0,1-2.924-1.257c-.005-.01-.015-.015-.02-.025a11.52,11.52,0,0,0-.887-.917c-.218-.208-.441-.426-.659-.654a2.528,2.528,0,0,1-.765-1.753,2.436,2.436,0,0,1,.78-1.738ZM2.093,46.228c.005,0,.005.005,0,0,.2.213.4.405.618.618a13.325,13.325,0,0,1,.978,1.014,2.443,2.443,0,0,0,1.906.806c.076,0,.157,0,.233-.005a10.992,10.992,0,0,0,3.953-1.186,22.512,22.512,0,0,0,7.48-5.858A20.574,20.574,0,0,0,20.91,35.54a7.236,7.236,0,0,0,.568-3.172,2.326,2.326,0,0,0-.7-1.505L19.05,29.134a1.152,1.152,0,0,0-.77-.36,1.084,1.084,0,0,0-.74.355l-.015.015c-.309.289-.6.588-.912.907-.157.162-.319.324-.481.492l-1.384,1.384a.967.967,0,0,0,0,1.571c.147.147.289.294.436.436.426.436.831.841,1.272,1.237.01.01.02.015.025.025a1.034,1.034,0,0,1,.264,1.15l-.015.046a11.107,11.107,0,0,1-1.637,2.671l-.005.005a18.6,18.6,0,0,1-4.5,4.095,6.92,6.92,0,0,1-.623.34c-.182.091-.355.177-.5.269-.02.01-.041.025-.061.035a1.1,1.1,0,0,1-.5.127,1.084,1.084,0,0,1-.77-.35L6.4,41.849a1.147,1.147,0,0,0-.765-.38,1.032,1.032,0,0,0-.73.37l-.01.01L2.1,44.642A1,1,0,0,0,2.093,46.228Z" transform="translate(1.098 -26.029)" fill="#fff"/>
+                          <path id="Path_121" data-name="Path 121" d="M251.561,87.271a6.467,6.467,0,0,0-5.266,5.266.674.674,0,0,1-.668.563.9.9,0,0,1-.116-.01.679.679,0,0,1-.558-.784,7.82,7.82,0,0,1,6.372-6.372.682.682,0,0,1,.784.553A.671.671,0,0,1,251.561,87.271Z" transform="translate(-240.587 -81.558)" fill="#fff"/>
+                          <path id="Path_122" data-name="Path 122" d="M248.786,10.5A12.877,12.877,0,0,1,259.278.011a.677.677,0,1,1,.221,1.337,11.5,11.5,0,0,0-9.377,9.377.674.674,0,0,1-.668.563.9.9,0,0,1-.116-.01A.666.666,0,0,1,248.786,10.5Z" transform="translate(-248.775 0)" fill="#fff"/>
+                        </g>
+                      </svg>
+
+                    <a class="white-link">021-28428264</a>
+                </li>
+                <li class="footer-body">
+                    <p>ما را در شبکه های اجتماعی دنبال کنید</p>
+                </li>
+                <li class="footer-body" id="social-links-container">
+                    <a href="https://instagram.com/coaching724.ir" target="blank" class="social-links">
+                        <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" style="margin-left: 10px;">
+                            <path id="Path_131" data-name="Path 131" d="M212.681,209.84a2.84,2.84,0,1,1-2.84-2.84A2.84,2.84,0,0,1,212.681,209.84Zm0,0" transform="translate(-194.84 -194.84)" fill="#fff"/>
+                            <path id="Path_132" data-name="Path 132" d="M149.114,137.449a2.822,2.822,0,0,0-1.617-1.617,4.715,4.715,0,0,0-1.582-.293c-.9-.041-1.168-.05-3.443-.05s-2.545.009-3.443.05a4.717,4.717,0,0,0-1.582.293,2.823,2.823,0,0,0-1.617,1.617,4.717,4.717,0,0,0-.293,1.582c-.041.9-.05,1.168-.05,3.443s.009,2.545.05,3.443a4.715,4.715,0,0,0,.293,1.582,2.822,2.822,0,0,0,1.617,1.617,4.709,4.709,0,0,0,1.582.293c.9.041,1.168.05,3.443.05s2.545-.009,3.443-.05a4.709,4.709,0,0,0,1.582-.293,2.822,2.822,0,0,0,1.617-1.617,4.718,4.718,0,0,0,.293-1.582c.041-.9.05-1.168.05-3.443s-.009-2.545-.05-3.443A4.709,4.709,0,0,0,149.114,137.449Zm-6.643,9.4a4.376,4.376,0,1,1,4.376-4.376A4.376,4.376,0,0,1,142.471,146.85Zm4.549-7.9a1.023,1.023,0,1,1,1.023-1.023A1.023,1.023,0,0,1,147.019,138.948Zm0,0" transform="translate(-127.471 -127.474)" fill="#fff"/>
+                            <path id="Path_133" data-name="Path 133" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0" fill="#fff"/>
+                          </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/coaching724" target="blank" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" style="margin-left: 10px;">
+                            <path id="linkedin" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0ZM10.641,22.676H6.988V11.685h3.653ZM8.815,10.184H8.791a1.9,1.9,0,1,1,.048-3.8,1.9,1.9,0,1,1-.024,3.8Zm15,12.491H20.161V16.8c0-1.478-.529-2.485-1.851-2.485a2,2,0,0,0-1.874,1.336,2.5,2.5,0,0,0-.12.891v6.138H12.663s.048-9.96,0-10.991h3.653v1.556a3.627,3.627,0,0,1,3.292-1.814c2.4,0,4.206,1.571,4.206,4.947Zm0,0" fill="#fff"/>
+                          </svg>
+                    </a>
+                    <a href="https://www.aparat.com/Coaching724.ir" target="blank" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.001" height="30" viewBox="0 0 30.001 30">
+                            <path id="aparat" d="M15,30a15,15,0,1,1,10.606-4.394A15,15,0,0,1,15,30Zm7.08-10.559A8.334,8.334,0,0,1,15.986,23.3l2.005.453a3.081,3.081,0,0,0,.672.076,3.019,3.019,0,0,0,2.959-2.369ZM15,7.563A7.438,7.438,0,1,0,22.438,15,7.438,7.438,0,0,0,15,7.563ZM6.7,15.986h0l-.453,2.005a3.041,3.041,0,0,0,2.294,3.631l2.022.457A8.335,8.335,0,0,1,6.7,15.986ZM19.442,7.921h0A8.331,8.331,0,0,1,23.3,14.015l.453-2.006A3.036,3.036,0,0,0,21.46,8.378Zm-8.1-1.753a3.021,3.021,0,0,0-2.96,2.369L7.921,10.56A8.336,8.336,0,0,1,14.016,6.7L12.01,6.243a3.055,3.055,0,0,0-.671-.075ZM16.86,20.114a1.859,1.859,0,1,1,1.859-1.859,1.859,1.859,0,0,1-1.859,1.859Zm-5.113-1.4a1.859,1.859,0,1,1,1.859-1.859,1.859,1.859,0,0,1-1.859,1.859ZM15,15.93a.93.93,0,1,1,.93-.93.93.93,0,0,1-.93.93ZM18.255,15a1.859,1.859,0,1,1,1.859-1.859A1.859,1.859,0,0,1,18.255,15Zm-5.114-1.394A1.859,1.859,0,1,1,15,11.747a1.859,1.859,0,0,1-1.859,1.859Z" transform="translate(0.001)" fill="#fff"/>
+                          </svg>
+
+                    </a>
+                </li>
+            </ul>
+            <div class="responsive-box">
+                <ul class="footer-important-links">
+                    <li class="footer-header">
+                        <h1>لینک های مهم</h1>
+                    </li>
+                    <li class="footer-body">
+                        <a href="./index.html"><span data-hover="صفحه اصلی">صفحه اصلی</span></a>
+                    </li>
+                    <li class="footer-body">
+                        <a href="./Tarrif.html"><span data-hover="تعرفه ها">تعرفه ها</span></a>
+                    </li>
+                    <li class="footer-body">
+                        <a href="./contact-us.html"><span data-hover="ارتباط با ما">ارتباط با ما</span></a>
+                    </li>
+                    <li class="footer-body">
+                        <a href="./About.html"><span data-hover="درباره ما">درباره ما</span></a>
+                    </li>
+                </ul>
+                <ul class="footer-quick-access">
+                    <li class="footer-header">
+                        <h1>دسترسی سریع</h1>
+                    </li>
+                    <li class="footer-body">
+                        <a><span data-hover="مربی ها">مربی ها</span></a>
+                    </li>
+                    <li class="footer-body">
+                        <a><span data-hover="مشاوره رایگان">مشاوره رایگان</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-container">
+            <p class="copyright-text">کلیه حقوق این سایت متعلق کوچینگ 724 می باشد.</p>
+        </div>
+    </footer>
+</body>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/swiper.js"></script>
+<script src="./assets/js/scripts.js"></script>
+
+</html>

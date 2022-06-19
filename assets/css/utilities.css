@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #ffd21f;
+    --secondary-color: #0143a4;
+    --light-color: #f8f8f8;
+    --dark-color: #333;
+    --gray-color: #f8f8f8;
+    --light-gray-color: #eeeeee;
+    --white-color: #ffffff;
+    --primary-hover: #d6b11a;
+    --secondary-hover: #0b52bd;
+    --white-hover: #e4e2e2;
+}
+
+.btn {
+    display: flex;
+    width: fit-content;
+    width: -moz-fit-content;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn.btn-sm {
+    padding: 0.2rem 0.9rem !important;
+}
+
+.btn.btn-md {
+    padding: 0.8rem 1.8rem !important;
+}
+
+.btn.btn-sq {
+    padding: 0.6rem 0.6rem;
+}
+
+.btn.btn-md-wide {
+    padding: 0.8rem 3rem !important;
+}
+
+.btn-primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-white {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn svg {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+.btn-white:hover {
+    background-color: var(--white-hover);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-white {
+    background-color: var(--white-color);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray-color);
+}
+
+.border-white {
+    border: 1px var(--white-color) solid;
+}
+
+.border-primary {
+    border: 1px var(--primary-color) solid !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
+.text-white {
+    color: var(--white-color) !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.mg-auto {
+    margin: auto;
+}
+
+.mg-t-5 {
+    margin-top: 15px;
+}
+
+.mg-t-7 {
+    margin-top: 25px !important;
+}
+
+.mg-b-5 {
+    margin-bottom: 15px;
+}
+
+.mg-b-7 {
+    margin-bottom: 25px;
+}
+
+.mg-r-5 {
+    margin-right: 15px;
+}
+
+.mg-t-90 {
+    margin-top: 90px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.flex-r {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.flex-r-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-c-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end
+}
